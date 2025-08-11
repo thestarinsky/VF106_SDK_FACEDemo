@@ -1,0 +1,9 @@
+include ':face-sdk-library'
+include ':app',
+        ':facelibrary'
+include ':attendancelibrary'
+include ':gatelibrary'
+include ':registerlibrary'
+include ':financelibrary'
+include ':identifylibrary'
+include ':datalibrary'

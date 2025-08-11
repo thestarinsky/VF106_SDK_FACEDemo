@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/logo_view"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linerbarlivedetectmodel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fls_save"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/ic_return" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="性能设置"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#333333"></View>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/qc_LinerLiving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sr_liner_rectangle"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linergesture"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvgesture"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/activition_20"
+                                    android:text="检测帧数"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"></TextView>
+
+                                <ImageView
+                                    android:id="@+id/qc_GestureDecrease"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="200dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/icon_setting_minus" />
+
+                                <EditText
+                                    android:id="@+id/qc_GestureEtThreshold"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/sr_liner_rectangle_black"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:minWidth="60dp"
+                                    android:text="3"
+                                    android:textColor="#cccccc"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:id="@+id/qc_GestureIncrease"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/icon_setting_add" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+                        <LinearLayout
+                            android:id="@+id/flRepresent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sr_liner_rectangle"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/high_group"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="75dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/fls_high"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:button="@drawable/sr_radio_button__selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/start_15"
+                                    android:text="高"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/rgbView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="#333333" />
+
+                            <LinearLayout
+                                android:id="@+id/in_group"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="75dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/fls_in"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:button="@drawable/sr_radio_button__selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/start_15"
+                                    android:text="中"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/rgbAndNirView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0.3dp"
+                                android:background="#333333" />
+
+
+                            <LinearLayout
+                                android:id="@+id/low_group"
+                                android:layout_width="match_parent"
+                                android:gravity="center_vertical"
+                                android:layout_height="75dp"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/fls_low"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:button="@drawable/sr_radio_button__selector" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/start_15"
+                                    android:text="低"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#333333"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/showText"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="6dp"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="此镜头设备是对cpu占用率进行调试，cpu占用率越高，人脸框追踪速度越慢，请您根据具体业务诉求进行配置修改。高：cpu占用率50~60%；中：cpu占用率30~40%；低：cpu占用率20~30%"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"></TextView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/logo_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activition_20"
+        android:layout_above="@+id/logo_text" />
+
+    <TextView
+        android:id="@+id/logo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:alpha="0.4"
+        android:gravity="center_horizontal"
+        android:text="— 百度大脑技术支持 —"
+        android:textColor="#666666"
+        android:textSize="@dimen/bottom_font" />
+
+    <View
+        android:id="@+id/popShowRely"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
