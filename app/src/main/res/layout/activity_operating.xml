@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/operationNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="运营专用设备，禁止触碰"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前处于运营时间 (6:00-23:59)"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

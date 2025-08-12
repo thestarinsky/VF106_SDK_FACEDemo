@@ -4,40 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/image_open">
+    android:background="@mipmap/supcon_startup">
 
     <TextView
-        android:layout_marginBottom="@dimen/start_10"
-        android:layout_above="@+id/start_offTv"
         android:id="@+id/start_titleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/start_offTv"
         android:layout_centerHorizontal="true"
-        android:text="@string/string_baidu"
+        android:layout_marginBottom="40dp"
+        android:text="@string/string_supcon"
         android:textColor="@color/blue"
-        android:textSize="@dimen/start_title"/>
+        android:textSize="@dimen/start_title" />
+
     <TextView
-        android:textSize="@dimen/bottom_font"
         android:id="@+id/start_offTv"
-        android:layout_marginBottom="@dimen/start_77"
-        android:layout_above="@+id/start_brainTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/start_brainTv"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
         android:layout_centerHorizontal="true"
-        android:text="开       启       离       线       刷       脸       之       旅"
-        android:textColor="@color/start_blue"/>
+        android:layout_marginBottom="400dp"
+        android:text="定  义  全  新  施  工  智  慧  管  理"
+        android:textColor="@color/start_blue"
+        android:textSize="@dimen/bottom_font" />
+
     <TextView
-        android:textSize="@dimen/bottom_font"
         android:id="@+id/start_brainTv"
-        android:layout_marginBottom="@dimen/start_15"
-        android:textColor="#ffffff"
-        android:text="@string/home_baidu"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-<!--    <Button-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/abut"/>-->
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/start_15"
+        android:text="@string/home_baidu"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/bottom_font" />
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/abut"/>-->
 </RelativeLayout>

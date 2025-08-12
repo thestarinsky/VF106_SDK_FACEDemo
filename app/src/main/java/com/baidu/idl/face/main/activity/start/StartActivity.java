@@ -10,6 +10,7 @@ import com.baidu.idl.face.main.activity.BaseActivity;
 import com.baidu.idl.face.main.activity.FaceSDKManager;
 import com.baidu.idl.face.main.finance.utils.FinanceConfigUtils;
 import com.baidu.idl.facesdkdemo.R;
+import com.baidu.idl.main.facesdk.activity.gate.FaceDepthGateActivity;
 import com.baidu.idl.main.facesdk.attendancelibrary.utils.AttendanceConfigUtils;
 import com.baidu.idl.main.facesdk.identifylibrary.utils.IdentifyConfigUtils;
 import com.baidu.idl.main.facesdk.listener.SdkInitListener;
@@ -100,8 +101,6 @@ public class StartActivity extends BaseActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-
-
                                 startActivity(new Intent(mContext, HomeActivity.class));
                                 finish();
                             }
@@ -121,7 +120,8 @@ public class StartActivity extends BaseActivity {
                             @Override
                             public void run() {
 
-                                startActivity(new Intent(mContext, Activitionctivity.class));
+//                                startActivity(new Intent(mContext, Activitionctivity.class));
+                                startActivity(new Intent(mContext, FaceDepthGateActivity.class));
                                 finish();
                             }
                         });

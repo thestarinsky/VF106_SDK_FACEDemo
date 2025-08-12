@@ -17,6 +17,7 @@ import com.baidu.idl.face.main.fragment.OfflineFragment;
 import com.baidu.idl.face.main.fragment.OnlineFragment;
 import com.baidu.idl.face.main.pager.FragmentPageAdapter;
 import com.baidu.idl.facesdkdemo.R;
+import com.baidu.idl.face.main.utils.TimeUtils;
 
 import java.util.ArrayList;
 
@@ -36,9 +37,14 @@ public class Activitionctivity extends BaseActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activition);
-        mContext = this;
-        initView();
+        if (TimeUtils.isInOperatingTime()) {
+            // 运营时间，使用运营专用布局
+            setContentView(R.layout.activity_operating);
+        } else {
+            setContentView(R.layout.activity_activition);
+            mContext = this;
+            initView();
+        }
     }
 
 
@@ -52,6 +58,7 @@ public class Activitionctivity extends BaseActivity implements View.OnClickListe
         // 在线激活
         accreditOnTv = findViewById(R.id.accredit_onTv);
         accreditOnTv.setOnClickListener(this);
+
         // 应用激活
         accreditUseTv = findViewById(R.id.accredit_useTv);
         accreditUseTv.setOnClickListener(this);

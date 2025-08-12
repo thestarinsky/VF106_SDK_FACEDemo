@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/string_baidu"
+        android:text="@string/string_supcon"
         android:textColor="@color/blue"
         android:textSize="@dimen/start_title"/>
     <TextView

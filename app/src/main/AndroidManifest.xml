@@ -13,7 +13,7 @@
         <uses-permission
             android:name="android.permission.WRITE_SETTINGS"
             tools:ignore="ProtectedPermissions" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
         <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.GET_TASKS" />
         <uses-permission android:name="android.permission.VIBRATE" />
@@ -22,38 +22,37 @@
         <uses-feature
             android:name="android.hardware.camera.autofocus"
             android:required="true" />
-    <uses-feature
+        <uses-feature
         android:name="android.hardware.camera.front"
         android:required="true" />
-    <uses-feature
+        <uses-feature
         android:name="android.hardware.camera.front.autofocus"
         android:required="true" />
 
-    <application
-        android:requestLegacyExternalStorage="true"
-        android:hardwareAccelerated="true"
-        android:largeHeap="true"
-        android:icon="@mipmap/ic_launcher"
-        tools:ignore="GoogleAppIndexingWarning">
+        <application
+            android:requestLegacyExternalStorage="true"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:icon="@mipmap/ic_launcher"
+            tools:ignore="GoogleAppIndexingWarning">
 
-        <meta-data
-            android:name="design_width_in_dp"
-            android:value="480" />
-        <meta-data
-            android:name="design_height_in_dp"
-            android:value="800" />
+            <meta-data
+                android:name="design_width_in_dp"
+                android:value="480" />
+            <meta-data
+                android:name="design_height_in_dp"
+                android:value="800" />
 
-        <activity android:name="com.baidu.idl.face.main.activity.start.Activitionctivity" />
-        <activity android:name="com.baidu.idl.face.main.activity.start.HomeActivity" />
-        <activity android:name="com.baidu.idl.face.main.activity.start.StartSettingActivity" />
-        <activity
-            android:name="com.baidu.idl.face.main.activity.start.StartActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            <activity android:name="com.baidu.idl.face.main.activity.start.Activitionctivity" />
+            <activity android:name="com.baidu.idl.face.main.activity.start.HomeActivity" />
+            <activity android:name="com.baidu.idl.face.main.activity.start.StartSettingActivity" />
+            <activity
+                android:name="com.baidu.idl.face.main.activity.start.StartActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
         <!-- 安全设备指纹接入 start -->
 <!--        <activity-->
 <!--            android:name="com.baidu.liantian.LiantianActivity"-->
@@ -100,12 +99,12 @@
             </intent-filter>
         </service>
 -->
-        <meta-data
-            android:name="seckey_avscan"
-            android:value="660346260f8a841a04ec2a56815b421b" />
-        <meta-data
-            android:name="appkey_avscan"
-            android:value="100034" /> <!-- 安全设备指纹接入 end -->
-    </application>
+            <meta-data
+                android:name="seckey_avscan"
+                android:value="660346260f8a841a04ec2a56815b421b" />
+            <meta-data
+                android:name="appkey_avscan"
+                android:value="100034" /> <!-- 安全设备指纹接入 end -->
+        </application>
 
 </manifest>

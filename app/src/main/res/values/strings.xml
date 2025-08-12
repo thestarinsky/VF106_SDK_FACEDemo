@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BaiDuFace Demo</string>
+    <string name="app_name">SUPCON Demo</string>
 
     <string name="face_setting">设置</string>
     <string name="face_id">设备ID</string>
@@ -129,7 +129,7 @@
     <string name="home_attention_english">ATTENTION MODE</string>home_checkTv
     <string name="home_face">人脸注册</string>
     <string name="home_faceLibrary">人脸库管理</string>
-    <string name="home_baidu">-- 百度大脑技术支持 --</string>
+    <string name="home_baidu">-- 中控信息技术支持 --</string>
     <string name="testimony_preview">预览模式</string>
     <string name="testimony_development">开发模式</string>
     <string name="hint_adain">重新上传</string>
@@ -138,7 +138,7 @@
     <string name="testimony_tips_please_fail">请上传正面人脸照片</string>
     <string name="testimony_tips_success">上传图片不包含人脸</string>
     <string name="testimony_tips_please_success">无法进行人证比对</string>
-    <string name="string_baidu">百度人脸离线识别SDK</string>
+    <string name="string_supcon">中控施工管理系统</string>
     <string name="accredit_off">离线激活</string>
     <string name="off_technological_process">离线激活流程: </string>
     <string name="off_technological_process_one">购买激活序列号</string>
